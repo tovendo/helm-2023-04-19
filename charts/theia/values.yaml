@@ -93,3 +93,10 @@ readinessProbe:
   httpGet:
     path: /
     port: http
+
+persistence:
+  accessModes: "ReadWriteOnce"
+  enabled: true
+  size: 1Gi
+  storageClass: longhorn
+  path: /home/project
